@@ -52,3 +52,6 @@ fontawesome:
 bootstrap:
   version:        2.3.2
   url:            http://getbootstrap.com
+
+theme: none
+plugins: []
