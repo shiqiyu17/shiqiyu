@@ -264,10 +264,10 @@ const X = v(R, [
         r = _([]);
       return k(async () => {
         try {
-          const i = await fetch("./public/info.json"); // Changed path
+          const i = await fetch("shiqiyu/public/info.json"); // Changed path
           if (!i.ok) throw new Error("Failed to fetch info.json");
           t.value = await i.json();
-          const o = await fetch("./public/books.json"); // Changed path
+          const o = await fetch("shiqiyu/public/books.json"); // Changed path
           if (!o.ok) throw new Error("Failed to fetch books.json");
           r.value = await o.json()
         } catch (i) {
@@ -282,7 +282,7 @@ const X = v(R, [
         }, null, -1)), t.value ? (g(), f("div", Y, [n("div", q, [n("div", J, [d(p, {
           width: 110,
           "img:": "",
-          src: "../../public/image/生活照.jpg"
+          src: "shiqiyu/../../public/image/生活照.jpg"
         })]), n("div", K, [o[1] || (o[1] = n("p", {
           class: "highlight"
         }, "hello world", -1)), o[2] || (o[2] = n("span", {
@@ -345,7 +345,7 @@ const X = v(R, [
       const t = _([]);
       return k(async () => {
         try {
-          const r = await fetch("./public/volunteer.json"); // Changed path
+          const r = await fetch("shiqiyu/public/volunteer.json"); // Changed path
           if (!r.ok) throw new Error("Failed to fetch volunteer.json");
           t.value = await r.json()
         } catch (r) {
